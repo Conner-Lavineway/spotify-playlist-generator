@@ -1,5 +1,6 @@
 # spotify-playlist-generator
 To-Do
+ - get authentication token
  - search on spotify
  - get data from search
  - create playlist
