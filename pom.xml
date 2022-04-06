@@ -1,53 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.sitereader</groupId>
-  <artifactId>sitereader</artifactId>
-  <version>1.0-TEST</version>
+    <groupId>com.sitereader</groupId>
+    <artifactId>sitereader</artifactId>
+    <version>1.0-TEST</version>
 
-  <name>sitereader</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+    <name>sitereader</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
 
-  <dependencies>
+    <dependencies>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.25</version>
+            </dependency>
 
-      <dependency>
-          <groupId>de.sonallux.spotify</groupId>
-          <artifactId>spotify-web-api-java</artifactId>
-          <version>2.4.0</version>
-      </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-jdk14</artifactId>
+                <version>1.7.25</version>
+            </dependency>
+
+            <dependency>
+                <groupId>se.michaelthelin.spotify</groupId>
+                <artifactId>spotify-web-api-java</artifactId>
+                <version>7.0.0</version>
+            </dependency>
 
 
-      <dependency>
-          <groupId>de.sonallux.spotify</groupId>
-          <artifactId>spotify-web-api-java</artifactId>
-          <version>2.4.0</version>
-      </dependency>
+            <dependency>
+                <!-- jsoup HTML parser library @ https://jsoup.org/ -->
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.14.3</version>
+            </dependency>
 
-
-    <dependency>
-        <!-- jsoup HTML parser library @ https://jsoup.org/ -->
-        <groupId>org.jsoup</groupId>
-        <artifactId>jsoup</artifactId>
-        <version>1.14.3</version>
-      </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.11</version>
+                <scope>test</scope>
+            </dependency>
+    </dependencies>
+        
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -94,4 +105,5 @@
       </plugins>
     </pluginManagement>
   </build>
+
 </project>
