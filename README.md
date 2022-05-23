@@ -1,4 +1,5 @@
 # spotify-playlist-generator
+Stopped due to needing secure websitee for spotify API calls
 To-Do
  - get authentication token
  - search on spotify
