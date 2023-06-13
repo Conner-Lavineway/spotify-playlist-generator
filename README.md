@@ -13,3 +13,6 @@ Done
  - output to readable formatted file
  - connect to spotify
  - login user
+
+
+Progress stoped due to needing a server to authenticate
